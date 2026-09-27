@@ -45,7 +45,7 @@ class _AppealScreenState extends State<AppealScreen> {
             ),
             const SizedBox(height: 16),
             DropdownButtonFormField<AppealCategory>(
-              value: _selectedCategory,
+              initialValue: _selectedCategory,
               decoration: const InputDecoration(border: OutlineInputBorder()),
               items: AppealCategory.values.map((category) {
                 return DropdownMenuItem(

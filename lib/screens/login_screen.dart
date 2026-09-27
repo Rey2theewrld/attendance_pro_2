@@ -75,6 +75,7 @@ class LoginScreen extends StatelessWidget {
                     TextButton.icon(
                       onPressed: () async {
                         await DatabaseService().seedInitialData();
+                        if (!context.mounted) return;
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(content: Text('Cloud Seeded! Students added to Firebase.')),
                         );

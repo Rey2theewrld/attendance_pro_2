@@ -86,7 +86,7 @@ class StudentDashboard extends StatelessWidget {
           const SizedBox(height: 8),
           Chip(
             label: Text(student.status.label),
-            backgroundColor: student.status.color.withOpacity(0.2),
+            backgroundColor: student.status.color.withValues(alpha: 0.2),
             labelStyle: TextStyle(color: student.status.color, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 16),
@@ -146,7 +146,7 @@ class StudentDashboard extends StatelessWidget {
       margin: const EdgeInsets.all(16),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.1),
+        color: color.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: color, width: 2),
       ),
